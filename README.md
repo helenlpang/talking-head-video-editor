@@ -1,10 +1,16 @@
-# bad take trimmer
+# AI video editor for talking head videos
 
-a video editor i built for myself to make youtube videos faster.
+an AI-assisted video editor i built for myself, for talking head videos (the talking-to-camera kind i make for youtube).
 
-i film a lot of talking-to-camera videos, and the worst part was always sitting through the whole recording to cut out every "um," every time i stumbled, and every take where i restarted a sentence. so i made a tool that does the boring parts for me and lets me do the fun parts (captions, sound effects, effects) without opening a big heavy editor.
+i kept running into two problems:
 
-honestly it started as a "fix my one annoying problem" thing and slowly turned into a whole editor. here's everything it does.
+**1) cutting out filler words & bad takes took forever.** every "um," every time i stumbled, every take where i restarted a sentence — i had to sit through the whole recording and cut them one by one.
+
+**2) i was bouncing between a bunch of free tools to do different things.** text effects? i'd export my video to canva. zoom / ken burns? export to imovie. color adjustments? imovie again. so i was constantly exporting the same video into different apps, doing one thing, and re-exporting.
+
+so i built one tool that does it all. the AI finds the filler words and bad takes for me, and everything else — captions, text effects, zoom, sound effects, color — lives in the same place. no more exporting my video five times.
+
+here's everything it does.
 
 <!-- DEMO_GIF -->
 
