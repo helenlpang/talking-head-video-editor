@@ -1,0 +1,82 @@
+# bad take trimmer
+
+a video editor i built for myself to make youtube videos faster.
+
+i film a lot of talking-to-camera videos, and the worst part was always sitting through the whole recording to cut out every "um," every time i stumbled, and every take where i restarted a sentence. so i made a tool that does the boring parts for me and lets me do the fun parts (captions, sound effects, effects) without opening a big heavy editor.
+
+honestly it started as a "fix my one annoying problem" thing and slowly turned into a whole editor. here's everything it does.
+
+<!-- DEMO_GIF -->
+
+## the main idea
+
+you drop in a video, and it *listens* to it. it writes out everything you said as clickable text, and it automatically finds the parts worth cutting — filler words, long silences, stutters, and takes where you repeated yourself. you just skim the transcript and delete the bad parts like you're editing a google doc. no scrubbing back and forth.
+
+then when you're happy, you export a clean mp4.
+
+## what it can do
+
+**smart cutting**
+- turns your video into a full transcript you can click through — click a word, jump to that moment
+- auto-detects filler words, silences, stutters, and repeat takes (uses AI for the "you said the same thing 3 times" ones)
+- select words → hit delete → that part's cut. change your mind → undo, everything comes back
+- a "hide skipped" view that collapses all the deleted bits so you see only the final cut
+
+**if you record audio separately**
+- attach a better mic track and it lines it up with your video automatically
+- or drag it into place yourself if you're picky
+- one button to go back to the camera audio if you change your mind
+
+**text captions (like the ones on tiktok/reels)**
+- add text anywhere on the video, drag it around, resize it, pick fonts/colors/outlines
+- letter spacing, line spacing, outline thickness — all sliders
+- **effects**: typewriter (types on one letter at a time, with a speed slider), fade, and zoom
+- ken burns style movement (start small → end big, or slide across)
+- click right into the text box to edit it like a normal text box
+
+**sound effects**
+- a sound library that saves every sound you add, so you can reuse it in any project
+- drop in an mp3 and a little trim screen pops up so you can grab just the part you want
+- click a sound to drop it wherever your playhead is
+- preview any sound before you use it
+- right-click a word in the transcript → add a sound effect right on that word
+- volume sliders + mute on every clip, iMovie style
+
+**pictures**
+- add image overlays at any timestamp, resize/move them, fade or ken-burns them
+
+**making it look good**
+- crop/reframe to 16:9
+- brightness, contrast, saturation sliders
+- handles fancy iphone HDR footage so your colors don't come out weird
+
+**quality of life stuff**
+- smooth playback even with a million cuts (it pre-renders a preview in the background)
+- a real timeline with thumbnails, waveforms, and zoom
+- pick "standard editing only" if your video is already cut and you just want the editing tools (skips the transcription step, loads instantly)
+- export shows a live progress bar, and you can cancel it
+
+## how it's built
+
+it's one python file running a little web server, and the whole editor is the webpage. nothing fancy — flask + plain html/js on the front, and [ffmpeg](https://ffmpeg.org/) doing all the heavy video work behind the scenes. the AI repeat-take detection uses claude.
+
+## running it yourself
+
+you'll need python 3, [ffmpeg](https://ffmpeg.org/), and the python packages below.
+
+```bash
+pip install flask anthropic openai-whisper numpy pillow
+python3 preview_server.py --port 8765
+```
+
+then open http://localhost:8765 and drop in a video (or hit "load video").
+
+for the AI repeat-take detection, set your anthropic api key (everything else works without it):
+
+```bash
+export ANTHROPIC_API_KEY=your-key-here
+```
+
+## heads up
+
+this is a personal tool i made for my own workflow, so it's a little opinionated and rough around the edges. sharing it in case it's useful or interesting to anyone else :)
