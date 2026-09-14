@@ -1,6 +1,6 @@
 # AI video editor for talking head videos
 
-an AI-assisted video editor i built for myself, to make eidting talking head videos easier (the talking-to-camera kind i make for youtube).
+an AI-assisted video editor i built with Claude, to make editing talking head videos easier & *free*.
 
 when i edited videos for my youtube channel, i kept running into a few problems:
 
