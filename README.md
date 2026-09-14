@@ -10,7 +10,7 @@ when i edited videos for my youtube channel, i kept running into a few problems:
 
 **3) adding sound effects was a whole ordeal.** i download viral sound effects off youtube, and every time i want one i have to dig up the file again, re-trim it down to the part i want, and then re-watch my video to find the exact spot to drop it in.
 
-so i built one tool that does it all. the AI finds the filler words and bad takes for me, and everything else — captions, text effects, zoom, sound effects, color — lives in the same place. no more exporting my video five times.
+so i built one tool that does it all.  AI finds the filler words and bad takes for me, and everything else — captions, text effects, zoom, sound effects, color — lives in the same place. no more exporting my video five times.
 
 here's everything it does.
 
@@ -18,37 +18,36 @@ here's everything it does.
 
 ## the main idea
 
-you drop in a video, and Claude transcribes it. it writes out everything you said as clickable text, and it automatically finds the parts worth cutting — filler words, long silences, stutters, and takes where you repeated yourself. you just skim the transcript and delete the bad parts like you're editing a google doc. no scrubbing back and forth.
+you drop in a video, and Claude transcribes it. it writes out everything you said as clickable text, and it automatically deletes the parts worth cutting — filler words, long silences, stutters, and repeat takes. then you skim the transcript and can refine anything that was missed. no need to spend hours listening to your footage and manually editing it.
 
-then when you're happy, you export a clean mp4.
+then, you can add all sorts of standard video editing tools like text captions, image overlays, sound effects, and visual effects. the full list of capabilites is below. no need to switch to other platforms - it's all in one place.
 
 ## what it can do
 
 **smart cutting**
 - turns your video into a full transcript you can click through — click a word, jump to that moment
-- auto-detects filler words, silences, stutters, and repeat takes (uses AI for the "you said the same thing 3 times" ones)
-- select words → hit delete → that part's cut. change your mind → undo, everything comes back
+- auto-detects filler words, silences, stutters, and repeat takes with Whisper + Claude
+- transcript-based editing: delete or undo clips according to the words
 - a "hide skipped" view that collapses all the deleted bits so you see only the final cut
 
 **if you record audio separately**
 - attach a better mic track and it lines it up with your video automatically
 - or drag it into place yourself if you're picky
-- one button to go back to the camera audio if you change your mind
+- you can go back to the camera audio if you change your mind
 
-**text captions (like the ones on tiktok/reels)**
+**text captions & overlays**
 - add text anywhere on the video, drag it around, resize it, pick fonts/colors/outlines
-- letter spacing, line spacing, outline thickness — all sliders
-- **effects**: typewriter (types on one letter at a time, with a speed slider), fade, and zoom
-- ken burns style movement (start small → end big, or slide across)
-- click right into the text box to edit it like a normal text box
+- sliders for letter spacing, line spacing, outline thickness 
+- **effects**:
+- text effects: typewriter, fade, and zoom (with speed sliders)
+- ken burns style movement 
 
 **sound effects**
 - a **sound library** that saves every sound you add — already trimmed and ready — so you never have to re-find the file or re-trim it again. add it once, reuse it forever in any project
 - drop in an mp3 and a little trim screen pops up so you can grab just the part you want (that trimmed version is what gets saved to your library)
-- **add a sound by matching it to a word in your transcript** — right-click a word → add sound effect, and it drops in at exactly that moment. so i don't have to re-watch the video hunting for the right spot anymore
-- or just click a sound to drop it wherever your playhead is
+- **add a sound by matching it to a word in your transcript** — right-click a word → add sound effect, and it drops in at exactly that moment. so you don't have to re-watch the video hunting for the right spot anymore
 - preview any sound before you use it
-- volume sliders + mute on every clip, iMovie style
+- volume sliders + mute on every clip
 
 **pictures**
 - add image overlays at any timestamp, resize/move them, fade or ken-burns them
@@ -56,7 +55,7 @@ then when you're happy, you export a clean mp4.
 **making it look good**
 - crop/reframe to 16:9
 - brightness, contrast, saturation sliders
-- handles fancy iphone HDR footage so your colors don't come out weird
+- handles iphone HDR footage so your colors don't come out weird
 
 **quality of life stuff**
 - smooth playback even with a million cuts (it pre-renders a preview in the background)
