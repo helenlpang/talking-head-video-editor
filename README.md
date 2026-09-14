@@ -1,12 +1,12 @@
 # AI video editor for talking head videos
 
-an AI-assisted video editor i built for myself, for talking head videos (the talking-to-camera kind i make for youtube).
+an AI-assisted video editor i built for myself, to make eidting talking head videos easier (the talking-to-camera kind i make for youtube).
 
-i kept running into a few problems:
+when i edited videos for my youtube channel, i kept running into a few problems:
 
 **1) cutting out filler words & bad takes took forever.** every "um," every time i stumbled, every take where i restarted a sentence — i had to sit through the whole recording and cut them one by one.
 
-**2) i was bouncing between a bunch of free tools to do different things.** text effects? i'd export my video to canva. zoom / ken burns? export to imovie. color adjustments? imovie again. so i was constantly exporting the same video into different apps, doing one thing, and re-exporting.
+**2) i was bouncing between a bunch of free tools to do different things.** text effects? i'd export my video to canva. zoom / ken burns? export to imovie. color adjustments? imovie again. i was constantly exporting the same video into different apps, doing one thing, and re-exporting.
 
 **3) adding sound effects was a whole ordeal.** i download viral sound effects off youtube, and every time i want one i have to dig up the file again, re-trim it down to the part i want, and then re-watch my video to find the exact spot to drop it in.
 
@@ -18,7 +18,7 @@ here's everything it does.
 
 ## the main idea
 
-you drop in a video, and it *listens* to it. it writes out everything you said as clickable text, and it automatically finds the parts worth cutting — filler words, long silences, stutters, and takes where you repeated yourself. you just skim the transcript and delete the bad parts like you're editing a google doc. no scrubbing back and forth.
+you drop in a video, and Claude transcribes it. it writes out everything you said as clickable text, and it automatically finds the parts worth cutting — filler words, long silences, stutters, and takes where you repeated yourself. you just skim the transcript and delete the bad parts like you're editing a google doc. no scrubbing back and forth.
 
 then when you're happy, you export a clean mp4.
 
