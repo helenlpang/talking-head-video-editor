@@ -6,7 +6,7 @@ when i edited videos for my youtube channel, i kept running into a few problems:
 
 **1) cutting out filler words & bad takes took forever.** every "um," every time i stumbled, every take where i restarted a sentence — i had to sit through the whole recording and cut them one by one.
 
-**2) i was bouncing between a bunch of free tools to do different things.** text effects? i'd export my video to canva. zoom / ken burns? export to imovie. color adjustments? imovie again. i was constantly exporting the same video into different apps, doing one thing, and re-exporting.
+**2) i was bouncing between a bunch of free tools to do different things.** text effects? i'd export my video to canva. zoom / ken burns? export to imovie. color adjustments? imovie again. i was constantly exporting the same video into different apps, doing one thing, and re-exporting. and I am not willing to pay for any premium software since I'm not making money yet!
 
 **3) adding sound effects was a whole ordeal.** i download viral sound effects off youtube, and every time i want one i have to dig up the file again, re-trim it down to the part i want, and then re-watch my video to find the exact spot to drop it in.
 
