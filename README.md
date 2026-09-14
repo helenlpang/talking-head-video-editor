@@ -2,11 +2,13 @@
 
 an AI-assisted video editor i built for myself, for talking head videos (the talking-to-camera kind i make for youtube).
 
-i kept running into two problems:
+i kept running into a few problems:
 
 **1) cutting out filler words & bad takes took forever.** every "um," every time i stumbled, every take where i restarted a sentence — i had to sit through the whole recording and cut them one by one.
 
 **2) i was bouncing between a bunch of free tools to do different things.** text effects? i'd export my video to canva. zoom / ken burns? export to imovie. color adjustments? imovie again. so i was constantly exporting the same video into different apps, doing one thing, and re-exporting.
+
+**3) adding sound effects was a whole ordeal.** i download viral sound effects off youtube, and every time i want one i have to dig up the file again, re-trim it down to the part i want, and then re-watch my video to find the exact spot to drop it in.
 
 so i built one tool that does it all. the AI finds the filler words and bad takes for me, and everything else — captions, text effects, zoom, sound effects, color — lives in the same place. no more exporting my video five times.
 
@@ -41,11 +43,11 @@ then when you're happy, you export a clean mp4.
 - click right into the text box to edit it like a normal text box
 
 **sound effects**
-- a sound library that saves every sound you add, so you can reuse it in any project
-- drop in an mp3 and a little trim screen pops up so you can grab just the part you want
-- click a sound to drop it wherever your playhead is
+- a **sound library** that saves every sound you add — already trimmed and ready — so you never have to re-find the file or re-trim it again. add it once, reuse it forever in any project
+- drop in an mp3 and a little trim screen pops up so you can grab just the part you want (that trimmed version is what gets saved to your library)
+- **add a sound by matching it to a word in your transcript** — right-click a word → add sound effect, and it drops in at exactly that moment. so i don't have to re-watch the video hunting for the right spot anymore
+- or just click a sound to drop it wherever your playhead is
 - preview any sound before you use it
-- right-click a word in the transcript → add a sound effect right on that word
 - volume sliders + mute on every clip, iMovie style
 
 **pictures**
