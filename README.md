@@ -14,7 +14,7 @@ so i built one tool that does it all. the AI finds the filler words and bad take
 
 here's everything it does.
 
-<!-- DEMO_GIF -->
+![a quick walkthrough of the editor](demo.gif)
 
 ## the main idea
 
